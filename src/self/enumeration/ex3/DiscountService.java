@@ -1,6 +1,6 @@
 package self.enumeration.ex3;
 
-import static enumeration.ex3.Grade.*;      // 해당 import가 없으면 Grade.BASIC, Grade.GOLD, Grade.DIAMOND 와 같이 코드를 작성해야 함.
+import static self.enumeration.ex3.Grade.*;      // 해당 import가 없으면 Grade.BASIC, Grade.GOLD, Grade.DIAMOND 와 같이 코드를 작성해야 함.
 
 public class DiscountService {
 
