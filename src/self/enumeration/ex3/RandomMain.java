@@ -1,4 +1,4 @@
-package self.lang.math;
+package self.enumeration.ex3;
 
 import java.util.Random;
 

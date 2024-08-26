@@ -5,21 +5,21 @@ public class NestedOuter {
     private static int outClassValue = 3;
     private int outInstanceValue = 2;
 
-    // NestedOuter과 Nested 클래스는 아무런 관련이 없음. 단지 중첩되어 위치해 있을 뿐!!
-    // 단, 장점은 Nested가 NestedOuter의 private에 접근할 수 있음.( 안->밖 (가능) / 밖->안(불가능) )
     static class Nested {
         private int nestedInstanceValue = 1;
 
         public void print() {
-            // 자신의 멤버에 접근
-            System.out.println(nestedInstanceValue);            // 1
+            // 자신의 멤버의 접근
+            System.out.println("Nested의 private 멤버 : " + nestedInstanceValue);
 
-            // 바깥 클래스의 인스턴스 멤버에 접근 -> 컴파일 오류 발생
+            // 바깥 클래스의 인스턴스 멤버에 접근할 수 없다.       // static class 이므로 인스턴스 멤버에 접근이 당연히 불가능함
             // System.out.println(outInstanceValue);
 
-            // 바깥 클래스의 클래스 멤버에는 접근할 수 있다. private도 접근 가능
-            System.out.println(NestedOuter.outClassValue);      // 3
-            // System.out.println(outClassValue);      // 클래스 이름 빼고 변수 이름만 써도 접근 가능
+            // 바깥 클래스의 클래스 멤버(static멤버)에는 접근할 수 있다.
+            // private도 접근 가능   // private는 NestedOuter내부에서만 접근 가능한데 Nested도 그 내부에 속해있기 때문
+            System.out.println("NestedOuter의 클래스 멤버 : " + NestedOuter.outClassValue);
+            // System.out.println(outClassValue);      // 접근자 없이도 접근 가능함
         }
     }
+
 }
