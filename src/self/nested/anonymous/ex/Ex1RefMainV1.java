@@ -1,4 +1,4 @@
-package self.nested.anoymous.ex;
+package self.nested.anonymous.ex;
 
 import java.util.Random;
 

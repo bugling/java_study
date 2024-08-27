@@ -1,4 +1,4 @@
-package self.nested.anoymous;
+package self.nested.anonymous;
 
 import self.nested.local.Printer;
 
@@ -48,7 +48,7 @@ public class AnonymousOuter {
     }
 
     public static void main(String[] args) {
-        nested.anonymous.AnonymousOuter main = new nested.anonymous.AnonymousOuter();
+        AnonymousOuter main = new AnonymousOuter();
         main.process(2);
     }
 }
