@@ -1,4 +1,4 @@
-package self.Anoymous;
+package self.nested.anoymous;
 
 import self.nested.local.Printer;
 

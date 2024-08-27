@@ -1,4 +1,4 @@
-package self.nested.anoymous.ex0;
+package self.nested.anoymous.ex;
 
 public class Ex0Main {
 
