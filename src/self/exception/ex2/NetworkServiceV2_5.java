@@ -1,6 +1,6 @@
 package self.exception.ex2;
 
-public class NetworkServiceV2_2 {
+public class NetworkServiceV2_5 {
 
     public void sendMessage(String data) {
         String address = "http://example.com";
@@ -9,18 +9,14 @@ public class NetworkServiceV2_2 {
 
         try {
             client.connect();
-        } catch (NetworkClientExceptionV2 e) {
-            System.out.println("[오류] 코드: " + e.getErrorCode() + ", 메세지: " + e.getMessage());
-            return;
-        }
-
-        try {
             client.send(data);
+
         } catch (NetworkClientExceptionV2 e) {
             System.out.println("[오류] 코드: " + e.getErrorCode() + ", 메세지: " + e.getMessage());
-            return;
+        } finally {
+            // 명시하지 않은 에러를 catch하지 못하더라도 무조건 실행 -> 리소스 반환 문제 해결
+            client.disconnect();
         }
 
-        client.disconnect();
     }
 }

@@ -1,7 +1,5 @@
 package self.exception.ex2;
 
-import exception.ex2.NetworkClientExceptionV2;
-
 public class NetworkServiceV2_3 {
 
     public void sendMessage(String data) {
