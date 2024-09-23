@@ -1,4 +1,4 @@
-package self.generic.test.ex3;
+package self.generic.test.ex3.unit;
 
 public class BioUnit {
 

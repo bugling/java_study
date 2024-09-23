@@ -1,7 +1,6 @@
-package self.generic.test.ex3;
+package self.generic.ex3;
 
 import self.generic.animal.Animal;
-import self.generic.animal.Cat;
 
 public class AnimalHospitalV1 {
 

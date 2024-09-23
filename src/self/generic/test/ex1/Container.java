@@ -1,4 +1,4 @@
-package self.generic.test;
+package self.generic.test.ex1;
 
 public class Container<T> {
 

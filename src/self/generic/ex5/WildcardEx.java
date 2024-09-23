@@ -1,4 +1,4 @@
-package self.generic.test.ex5;
+package self.generic.ex5;
 
 import self.generic.animal.Animal;
 

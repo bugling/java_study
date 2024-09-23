@@ -1,4 +1,4 @@
-package self.generic.test.ex3;
+package self.generic.ex3;
 
 public class AnimalHospitalV2<T> {
 

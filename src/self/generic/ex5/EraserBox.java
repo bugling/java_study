@@ -1,4 +1,4 @@
-package self.generic.test.ex5;
+package self.generic.ex5;
 
 /**
  * 컴파일 시점에 T는 Object로 변한다. -> eraser
